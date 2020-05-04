@@ -9,9 +9,21 @@ use Commands\HealCommand;
 
 class Main extends PluginBase
 {
-    private function onCommands()
+    public static $instance;
+    public static function getInstance()
     {
 
+        return self::$instance;
+
+    }
+
+    public function onEnable()
+    {
+        $this->onCommands();
+    }
+
+    private function onCommands()
+    {
         $this->getServer()->getCommandMap()->registerAll("command",
             [
 
@@ -21,8 +33,8 @@ class Main extends PluginBase
             ]
 
         );
-
     }
 
 
 }
+
