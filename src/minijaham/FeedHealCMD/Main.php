@@ -1,11 +1,11 @@
 <?php
 
-namespace minijaham;
+namespace minijaham/FeedHealCMD;
 
 use pocketmine\plugin\PluginBase;
 
-use minijaham\Commands\FeedCommand;
-use minijaham\Commands\HealCommand;
+use FeedHealCMD\Commands\FeedCommand;
+use FeedHealCMD\Commands\HealCommand;
 
 class Main extends PluginBase
 {
