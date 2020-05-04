@@ -1,6 +1,6 @@
 <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/1/1b/Steak_JE3_BE3.png">
 # FeedAndHeal
-PocketMine-MP(PMMP) plugin which allows you to add /feed and /heal!
+PocketMine-MP(PMMP) plugin that allows you to add /feed and /heal on your server!
 
 # Commands
 /feed - Allows you to feed yourself! Replenish hunger!
