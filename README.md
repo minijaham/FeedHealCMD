@@ -14,3 +14,11 @@ Feed - command.use.feed
 Heal - command.use.heal
 
 Download .phar here - https://poggit.pmmp.io/ci/minijaham/FeedHealCMD
+
+# How to download
+1. Download .phar file from the link provided above
+2. Upload the .phar file that you downloaded to /plugins folder
+3. Restart your server
+4. Enjoy!
+
+Note: If there are any issues with the plugin, feel free to edit them however you want. Just please don't forget to read [LICENSE](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE)
