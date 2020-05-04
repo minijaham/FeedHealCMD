@@ -1,6 +1,6 @@
 <?php
 
-namespace minijaham/FeedHealCMD;
+namespace minijaham\FeedHealCMD;
 
 use pocketmine\plugin\PluginBase;
 
