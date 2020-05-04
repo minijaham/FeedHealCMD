@@ -60,13 +60,13 @@ class FeedCommand extends Command
 
             } else {
 
-                $sender->sendMessage("§cYou do not have permission to use this command. Buy the command or a rank in andromedamcpe.buycraft.net!");
+                $sender->sendMessage("§cYou do not have permission to use this command.");
 
             }
 
         } else {
 
-            $sender->sendMessage(self::prefix . "Go in-game and use this nate .-.");
+            $sender->sendMessage(self::prefix . "This command can only be executed in-game");
 
         }
 
