@@ -13,4 +13,4 @@ Feed - command.use.feed
 
 Heal - command.use.heal
 
-Download .phar here - https://poggit.pmmp.io/ci/minijaham/FeedAndHeal/FeedAndHeal
+Download .phar here - https://poggit.pmmp.io/ci/minijaham/FeedHealCMD
