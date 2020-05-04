@@ -11,7 +11,7 @@ class Main extends PluginBase
 {
 
 
-    const prefix = "§d[§bAPE§d]§f FeedAndHeal";
+    const prefix = "FeedHealCMD";
 
     public static $instance;
 
@@ -25,7 +25,7 @@ class Main extends PluginBase
     public function onEnable()
     {
 
-        $this->getServer()->getLogger()->info(self::prefix . "Plugin Enabled");
+        $this->getServer()->getLogger()->info(self::prefix . "Enabled");
 
         self::$instance = $this;
 
@@ -51,7 +51,7 @@ class Main extends PluginBase
     public function onDisable()
     {
 
-        $this->getServer()->getLogger()->info(self::prefix . "Plugin Disabled");
+        $this->getServer()->getLogger()->info(self::prefix . "Disabled");
 
     }
 
