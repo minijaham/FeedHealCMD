@@ -29,4 +29,5 @@ Also, I will be adding more useful plugins such as /speed, so if you have any ot
 
 # Extra
 Join my server! AndromedaMCPE.pocketmc.net:19132
+
 Discord: [AndromedaPE](https://bit.ly/APEdiscord)
