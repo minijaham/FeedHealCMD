@@ -10,7 +10,6 @@ use FeedHealCMD\Commands\HealCommand;
 class Main extends PluginBase
 {
 
-
     const prefix = "FeedHeal CMD";
 
     public static $instance;
