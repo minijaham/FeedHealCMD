@@ -1,0 +1,5 @@
+name: FeedHealCMD
+version: 1.0
+author: minijaham
+main: FeedHealCMD\Main
+api: [3.0.0,4.0.0]
