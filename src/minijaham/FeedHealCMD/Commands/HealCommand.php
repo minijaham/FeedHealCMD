@@ -1,7 +1,7 @@
 <?php
 
 
-namespace minijaham\FeedHealCMD\Commands;
+namespace FeedHealCMD\Commands;
 
 use minijaham\FeedHealCMD\Main;
 use pocketmine\command\Command;
