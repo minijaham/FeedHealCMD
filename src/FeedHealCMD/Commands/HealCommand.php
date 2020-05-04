@@ -62,13 +62,13 @@ class HealCommand extends Command
 
             } else {
 
-                $sender->sendMessage("§cYou do not have permission to use this command. Buy the command or a rank in andromedamcpe.buycraft.net!");
+                $sender->sendMessage("§cYou do not have permission to use this command.");
 
             }
 
         } else {
 
-            $sender->sendMessage(self::prefix . "Run the command in-game nate .-.");
+            $sender->sendMessage(self::prefix . "Run the command in-game");
 
         }
 
