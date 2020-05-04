@@ -1,5 +1,5 @@
 name: FeedHealCMD
 version: 1.0
 author: minijaham
-main: minijaham\Main
+main: minijaham\FeedHealCMD\Main
 api: [3.0.0, 3.12.0]
