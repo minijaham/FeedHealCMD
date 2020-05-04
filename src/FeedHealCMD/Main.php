@@ -10,9 +10,6 @@ use FeedHealCMD\Commands\HealCommand;
 class Main extends PluginBase
 {
 
-
-    const prefix = "FeedHealCMD";
-
     public static $instance;
 
     public static function getInstance()
@@ -25,7 +22,7 @@ class Main extends PluginBase
     public function onEnable()
     {
 
-        $this->getServer()->getLogger()->info(self::prefix . "Enabled");
+        $this->getServer()->getLogger()->info("FeedHealCMD Enabled");
 
         self::$instance = $this;
 
@@ -51,7 +48,7 @@ class Main extends PluginBase
     public function onDisable()
     {
 
-        $this->getServer()->getLogger()->info(self::prefix . "Disabled");
+        $this->getServer()->getLogger()->info("FeedHealCMD Disabled");
 
     }
 
