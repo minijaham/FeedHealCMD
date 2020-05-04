@@ -1,8 +1,8 @@
 <?php
 
-namespace minijaham\Commands;
+namespace minijaham\FeedHealCMD\Commands;
 
-use minijaham\Main;
+use minijaham\FeedHealCMD\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
