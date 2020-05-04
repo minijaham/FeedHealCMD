@@ -4,8 +4,8 @@ namespace minijaham\FeedHealCMD;
 
 use pocketmine\plugin\PluginBase;
 
-use FeedHealCMD\Commands\FeedCommand;
-use FeedHealCMD\Commands\HealCommand;
+use Commands\FeedCommand;
+use Commands\HealCommand;
 
 class Main extends PluginBase
 {
