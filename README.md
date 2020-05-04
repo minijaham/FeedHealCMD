@@ -25,3 +25,4 @@ Download .phar here - https://poggit.pmmp.io/ci/minijaham/FeedHealCMD
 4. Enjoy!
 
 Note: If there are any issues with the plugin, feel free to edit them however you want. Just please don't forget to read [LICENSE](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE)
+Also, I will be adding more useful commands such as /speed, so if you have any other suggestions, please feel free to create an issue!
