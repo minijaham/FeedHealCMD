@@ -16,7 +16,7 @@ Feed - command.use.feed
 
 Heal - command.use.heal
 
-Download .phar here - https://poggit.pmmp.io/ci/minijaham/FeedHealCMD
+Download latest .phar here - https://poggit.pmmp.io/ci/minijaham/FeedHealCMD
 
 # How to download
 1. Download .phar file from the link provided above
