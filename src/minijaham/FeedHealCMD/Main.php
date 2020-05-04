@@ -9,13 +9,6 @@ use FeedHealCMD\Commands\HealCommand;
 
 class Main extends PluginBase
 {
-    public static function getInstance()
-    {
-
-        return self::$instance;
-
-    }
-
     private function onCommands()
     {
 
