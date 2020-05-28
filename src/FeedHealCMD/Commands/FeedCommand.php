@@ -6,6 +6,8 @@ use FeedHealCMD\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+use pocketmine\level\particle\HappyVillagerParticle;
+use pocketmine\level\sound\AnvilUseSound;
 
 class FeedCommand extends Command
 {
@@ -21,7 +23,6 @@ class FeedCommand extends Command
         parent::__construct("feed");
 
         $this->setDescription("Feed yourself!");
-
         $this->setPermission("command.use.feed");
 
     }
@@ -39,8 +40,9 @@ class FeedCommand extends Command
 
                     $sender->setFood(20);
                     $sender->setSaturation(20);
-
-                    $sender->sendMessage(self::prefix . "Fed!");
+                    $sender->getLevel()->addParticle(new HappyVillagerParticle($sender));
+                    $sender->getLevel()->addSound(new AnvilUseSound($sender));
+                    $sender->addTitle("§aFed!");
 
                     return false;
 
@@ -53,8 +55,9 @@ class FeedCommand extends Command
 
                     $player->setFood(20);
                     $player->setSaturation(20);
-
-                    $player->sendMessage(self::prefix . "Fed!");
+                    $sender->getLevel()->addParticle(new HappyVillagerParticle($sender));
+                    $sender->getLevel()->addSound(new AnvilUseSound($sender));
+                    $player->sendMessage("§aFed!");
 
                 }
 
