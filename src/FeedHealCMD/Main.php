@@ -6,8 +6,6 @@ use pocketmine\plugin\PluginBase;
 
 use FeedHealCMD\Commands\FeedCommand;
 use FeedHealCMD\Commands\HealCommand;
-use FeedHealCMD\Commands\SpeedCommand;
-use FeedHealCMD\Commands\HasteCommand;
 
 class Main extends PluginBase
 {
@@ -42,8 +40,6 @@ class Main extends PluginBase
 
                 new FeedCommand(),
                 new HealCommand(),
-                new SpeedCommand(),
-                new HasteCommand(),
 
             ]
 
