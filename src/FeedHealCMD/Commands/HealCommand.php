@@ -40,8 +40,7 @@ class HealCommand extends Command
                 if (empty($args[0]))
                 {
 
-                    $sender->setHealth(20);
-                    $sender->setSaturation(20);
+                    $sender->setHealth($sender->getMaxHealth());
                     $sender->getLevel()->addParticle(new HappyVillagerParticle($sender));
                     $sender->getLevel()->addSound(new AnvilUseSound($sender));
                     $sender->sendMessage("§aHealed!");
@@ -55,10 +54,9 @@ class HealCommand extends Command
 
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
 
-                    $player->setHealth(20);
-                    $player->setSaturation(20);
-                    $player->getLevel()->addParticle(new HappyVillagerParticle($sender));
-                    $player->getLevel()->addSound(new AnvilUseSound($sender));
+                    $player->setHealth($player->getMaxHealth());
+                    $player->getLevel()->addParticle(new HappyVillagerParticle($player));
+                    $player->getLevel()->addSound(new AnvilUseSound($player));
                     $player->sendMessage("§aHealed!");
 
                 }
