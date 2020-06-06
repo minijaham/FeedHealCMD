@@ -67,7 +67,7 @@ class HealCommand extends Command
 
         } else {
 
-            $sender->sendMessage(self::prefix . "The command must be executed in-game.");
+            $sender->sendMessage("The command must be executed in-game.");
 
         }
 
