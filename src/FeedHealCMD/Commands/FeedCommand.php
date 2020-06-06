@@ -13,9 +13,7 @@ class FeedCommand extends Command
 {
 
     private $plugin;
-
-    const prefix = "§7(§a!§7)§a ";
-
+    
     public function __construct()
     {
         $this->plugin = Main::getInstance();
