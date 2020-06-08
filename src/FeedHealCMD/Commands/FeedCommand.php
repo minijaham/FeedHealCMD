@@ -21,7 +21,7 @@ class FeedCommand extends Command
         parent::__construct("feed");
 
         $this->setDescription("Feed yourself!");
-        $this->setPermission("command.use.feed");
+        $this->setPermission("feedhealcmd.feed");
 
     }
 
