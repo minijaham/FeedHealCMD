@@ -22,7 +22,7 @@ class HealCommand extends Command
         parent::__construct("heal");
 
         $this->setDescription("Heal yourself!");
-        $this->setPermission("command.use.heal");
+        $this->setPermission("feedhealcmd.heal");
 
     }
 
