@@ -28,7 +28,7 @@ Note: If there are any issues with the plugin, feel free to edit them however yo
 Also, I will be adding more useful commands such as /speed, so if you have any other suggestions, please feel free to create an issue!
 
 # Extra
-Join my server! AndromedaMCPE.pocketmc.net:19132
+Join my server! AndromedaPE.tk:19132
 
 Discord: [AndromedaPE](https://bit.ly/APEdiscord)
 
