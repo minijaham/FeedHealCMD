@@ -1,0 +1,6 @@
+# Message it sends when successfully executes /feed
+feedsuccess: "Successfully Fed!"
+# Message it sends when successfully executes /heal
+healsuccess: "Successfully Healed!"
+# Message that sends to player who executed the commands without permission
+nopermission: "You do not have permission to use this command"
