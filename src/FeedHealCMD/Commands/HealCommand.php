@@ -1,6 +1,5 @@
 <?php
 
-
 namespace FeedHealCMD\Commands;
 
 use FeedHealCMD\Main;
