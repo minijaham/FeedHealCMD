@@ -11,6 +11,7 @@ use pocketmine\Player;
 class HealCommand extends Command
 {
     private $plugin;
+    private $config;
     
     public function __construct()
     {
