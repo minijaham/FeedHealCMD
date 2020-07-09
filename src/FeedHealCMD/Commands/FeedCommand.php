@@ -10,6 +10,8 @@ use pocketmine\Player;
 class FeedCommand extends Command
 {
     private $plugin;
+    private $config;
+    
     public function __construct()
     {
         $this->plugin = Main::getInstance();
