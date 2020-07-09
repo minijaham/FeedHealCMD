@@ -9,67 +9,38 @@ use pocketmine\Player;
 
 class FeedCommand extends Command
 {
-
     private $plugin;
-
-    const prefix = "§7(§a!§7)§a ";
-
     public function __construct()
     {
         $this->plugin = Main::getInstance();
-
         parent::__construct("feed");
-
         $this->setDescription("Feed yourself!");
-
         $this->setPermission("command.use.feed");
-
     }
-
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-
         if ($sender instanceof Player)
         {
-
             if ($sender->hasPermission("command.use.feed"))
             {
-
                 if (empty($args[0])) {
-
                     $sender->setFood(20);
                     $sender->setSaturation(20);
-
-                    $sender->sendMessage(self::prefix . "Fed!");
-
+                    $sender->sendMessage($this->config["feedsuccess"]);
                     return false;
-
                 }
-
                 if (Main::getInstance()->getServer()->getPlayer($args[0]))
                 {
-
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
-
                     $player->setFood(20);
                     $player->setSaturation(20);
-
-                    $player->sendMessage(self::prefix . "Fed!");
-
+                    $sender->sendMessage($this->config["feedsuccess"]);
                 }
-
             } else {
-
-                $sender->sendMessage("§cYou do not have permission to use this command.");
-
+                $sender->sendMessage($this->config["nopermission"]);
             }
-
         } else {
-
-            $sender->sendMessage(self::prefix . "The command must be executed in-game.");
-
+            $sender->sendMessage("The command must be executed in-game.");
         }
-
     }
-
 }
