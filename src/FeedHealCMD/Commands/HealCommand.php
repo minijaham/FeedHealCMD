@@ -10,69 +10,38 @@ use pocketmine\Player;
 
 class HealCommand extends Command
 {
-
     private $plugin;
-
-    const prefix = "§7(§a!§7)§a ";
-
+    
     public function __construct()
     {
         $this->plugin = Main::getInstance();
-
         parent::__construct("heal");
-
         $this->setDescription("Heal yourself!");
-
         $this->setPermission("command.use.heal");
-
     }
-
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-
         if ($sender instanceof Player)
         {
-
             if ($sender->hasPermission("command.use.heal"))
             {
-
                 if (empty($args[0]))
                 {
-
-                    $sender->setHealth(20);
-                    $sender->setSaturation(20);
-
-                    $sender->sendMessage(self::prefix . "Healed!");
-
+                    $sender->setHealth($sender->getMaxHealth());
+                    $sender->sendMessage($this->config["healsuccess"]);
                     return false;
-
                 }
-
                 if (Main::getInstance()->getServer()->getPlayer($args[0]))
                 {
-
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
-
-                    $player->setHealth(20);
-                    $player->setSaturation(20);
-
-                    $player->sendMessage(self::prefix . "Healed!");
-
+                    $sender->setHealth($sender->getMaxHealth());
+                    $sender->sendMessage($this->config["healsuccess"]);
                 }
-
             } else {
-
-                $sender->sendMessage("§cYou do not have permission to use this command.");
-
+                $sender->sendMessage($this->config["nopermission"]);
             }
-
         } else {
-
             $sender->sendMessage(self::prefix . "The command must be executed in-game.");
-
         }
-
     }
-
 }
-
