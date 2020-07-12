@@ -11,28 +11,26 @@ class FeedCommand extends Command
 {
     private $plugin;
     private $config;
-    
+
     public function __construct()
     {
         $this->plugin = Main::getInstance();
         parent::__construct("feed");
         $this->setDescription("Feed yourself!");
         $this->setPermission("command.use.feed");
+        $this->config = Main::$config;
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-        if ($sender instanceof Player)
-        {
-            if ($sender->hasPermission("command.use.feed"))
-            {
+        if ($sender instanceof Player) {
+            if ($sender->hasPermission("command.use.feed")) {
                 if (empty($args[0])) {
                     $sender->setFood(20);
                     $sender->setSaturation(20);
                     $sender->sendMessage($this->config["feedsuccess"]);
                     return false;
                 }
-                if (Main::getInstance()->getServer()->getPlayer($args[0]))
-                {
+                if (Main::getInstance()->getServer()->getPlayer($args[0])) {
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
                     $player->setFood(20);
                     $player->setSaturation(20);

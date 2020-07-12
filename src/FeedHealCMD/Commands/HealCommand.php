@@ -11,28 +11,25 @@ class HealCommand extends Command
 {
     private $plugin;
     private $config;
-    
+
     public function __construct()
     {
         $this->plugin = Main::getInstance();
         parent::__construct("heal");
         $this->setDescription("Heal yourself!");
         $this->setPermission("command.use.heal");
+        $this->config = Main::$config;
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-        if ($sender instanceof Player)
-        {
-            if ($sender->hasPermission("command.use.heal"))
-            {
-                if (empty($args[0]))
-                {
+        if ($sender instanceof Player) {
+            if ($sender->hasPermission("command.use.heal")) {
+                if (empty($args[0])) {
                     $sender->setHealth($sender->getMaxHealth());
                     $sender->sendMessage($this->config["healsuccess"]);
                     return false;
                 }
-                if (Main::getInstance()->getServer()->getPlayer($args[0]))
-                {
+                if (Main::getInstance()->getServer()->getPlayer($args[0])) {
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
                     $sender->setHealth($sender->getMaxHealth());
                     $sender->sendMessage($this->config["healsuccess"]);
@@ -41,7 +38,7 @@ class HealCommand extends Command
                 $sender->sendMessage($this->config["nopermission"]);
             }
         } else {
-            $sender->sendMessage(self::prefix . "The command must be executed in-game.");
+            $sender->sendMessage(Main::prefix . "The command must be executed in-game.");
         }
     }
 }
