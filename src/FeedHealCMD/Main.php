@@ -3,6 +3,7 @@
 namespace FeedHealCMD;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
 
 use FeedHealCMD\Commands\FeedCommand;
 use FeedHealCMD\Commands\HealCommand;
@@ -14,11 +15,12 @@ class Main extends PluginBase
 
     public static $instance;
 
+    public static $config;
+
     public static function getInstance()
     {
 
         return self::$instance;
-
     }
 
     public function onEnable()
@@ -28,14 +30,18 @@ class Main extends PluginBase
 
         self::$instance = $this;
 
-        $this->onCommands();
+        $this->saveResource("config.yml");
 
+        self::$config = (new Config($this->getDataFolder() . "config.yml", Config::YAML))->getAll();
+
+        $this->onCommands();
     }
 
     private function onCommands()
     {
 
-        $this->getServer()->getCommandMap()->registerAll("command",
+        $this->getServer()->getCommandMap()->registerAll(
+            "command",
             [
 
                 new FeedCommand(),
@@ -44,15 +50,11 @@ class Main extends PluginBase
             ]
 
         );
-
     }
 
     public function onDisable()
     {
 
         $this->getServer()->getLogger()->info(self::prefix . " Disabled");
-
     }
-
-
 }
