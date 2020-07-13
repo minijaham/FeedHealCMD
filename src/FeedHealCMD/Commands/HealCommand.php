@@ -22,6 +22,7 @@ use pocketmine\level\sound\{
     GhastSound,
     LaunchSound,
     PopSound
+};
 
 class HealCommand extends Command
 {
