@@ -6,6 +6,22 @@ use FeedHealCMD\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+use pocketmine\level\sound\{
+    AnvilBreakSound,
+    AnvilFallSound,
+    AnvilUseSound,
+    BlazeShootSound,
+    ClickSOund,
+    DoorBumpSound,
+    DoorCrashSound,
+    DoorSound,
+    EndermanTeleportSound,
+    FizSound,
+    GenericSound,
+    GhastShootSound,
+    GhastSound,
+    LaunchSound,
+    PopSound
 
 class HealCommand extends Command
 {
@@ -27,12 +43,14 @@ class HealCommand extends Command
                 if (empty($args[0])) {
                     $sender->setHealth($sender->getMaxHealth());
                     $sender->sendMessage($this->config["healsuccess"]);
+                    $sender->getLevel()->addSound(new $this->config["healsound"]($sender));
                     return false;
                 }
                 if (Main::getInstance()->getServer()->getPlayer($args[0])) {
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
                     $sender->setHealth($sender->getMaxHealth());
                     $sender->sendMessage($this->config["healsuccess"]);
+                    $sender->getLevel()->addSound(new $this->config["healsound"]($sender));
                 }
             } else {
                 $sender->sendMessage($this->config["nopermission"]);
