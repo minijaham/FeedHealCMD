@@ -4,3 +4,25 @@ feedsuccess: "Successfully Fed!"
 healsuccess: "Successfully Healed!"
 # Message that sends to player who executed the commands without permission
 nopermission: "You do not have permission to use this command"
+
+//DO NOT LEAVE BLANK
+# Sound effect when player executes /feed. Default: AnvilUseSound.
+feedsound: AnvilUseSound
+# Sound effect when player executes /heal. Default: AnvilUseSound.
+healsound: AnvilUseSound
+//List of sounds
+# AnvilBreakSound
+# AnvilFallSound
+# AnvilUseSound
+# BlazeShootSound
+# ClickSOund
+# DoorBumpSound
+# DoorCrashSound
+# DoorSound
+# EndermanTeleportSound
+# FizSound
+# GenericSound
+# GhastShootSound
+# GhastSound
+# LaunchSound
+# PopSound
