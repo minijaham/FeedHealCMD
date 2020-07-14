@@ -8,6 +8,23 @@ use FeedHealCMD\Task\Particle;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+use pocketmine\level\sound\{
+    AnvilBreakSound,
+    AnvilFallSound,
+    AnvilUseSound,
+    BlazeShootSound,
+    ClickSOund,
+    DoorBumpSound,
+    DoorCrashSound,
+    DoorSound,
+    EndermanTeleportSound,
+    FizSound,
+    GenericSound,
+    GhastShootSound,
+    GhastSound,
+    LaunchSound,
+    PopSound
+};
 
 
 class FeedCommand extends Command
@@ -31,7 +48,7 @@ class FeedCommand extends Command
                     $sender->setFood(20);
                     $sender->setSaturation(20);
                     $sender->sendMessage($this->config["feedsuccess"]);
-                    new Particle($sender);
+                    $sender->getLevel()->addSound(new $this->config["feedsound"]($sender));
                     return false;
                 }
                 if (Main::getInstance()->getServer()->getPlayer($args[0])) {
@@ -40,6 +57,7 @@ class FeedCommand extends Command
                     $player->setSaturation(20);
                     new Sound($player);
                     $sender->sendMessage($this->config["feedsuccess"]);
+                    $sender->getLevel()->addSound(new $this->config["feedsound"]($sender));
                 }
             } else {
                 $sender->sendMessage($this->config["nopermission"]);
