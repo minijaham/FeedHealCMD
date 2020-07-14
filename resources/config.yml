@@ -1,3 +1,4 @@
+# Color Codes: use § symbol. Visit https://www.digminecraft.com/lists/color_list_pc.php for more information
 # Message it sends when successfully executes /feed
 feedsuccess: "Successfully Fed!"
 # Message it sends when successfully executes /heal
