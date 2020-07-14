@@ -3,9 +3,12 @@
 namespace FeedHealCMD\Commands;
 
 use FeedHealCMD\Main;
+use FeedHealCMD\Task\Sound;
+use FeedHealCMD\Task\Particle;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+
 
 class FeedCommand extends Command
 {
@@ -24,16 +27,18 @@ class FeedCommand extends Command
     {
         if ($sender instanceof Player) {
             if ($sender->hasPermission("command.use.feed")) {
-                if (empty($args[0])) {
+                if (empty($args[0]) && $sender instanceof Player) {
                     $sender->setFood(20);
                     $sender->setSaturation(20);
                     $sender->sendMessage($this->config["feedsuccess"]);
+                    new Particle($sender);
                     return false;
                 }
                 if (Main::getInstance()->getServer()->getPlayer($args[0])) {
                     $player = Main::getInstance()->getServer()->getPlayer($args[0]);
                     $player->setFood(20);
                     $player->setSaturation(20);
+                    new Sound($player);
                     $sender->sendMessage($this->config["feedsuccess"]);
                 }
             } else {

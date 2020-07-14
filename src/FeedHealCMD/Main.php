@@ -35,6 +35,7 @@ class Main extends PluginBase
         self::$config = (new Config($this->getDataFolder() . "config.yml", Config::YAML))->getAll();
 
         $this->onCommands();
+
     }
 
     private function onCommands()
