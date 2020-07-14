@@ -3,55 +3,35 @@
 namespace FeedHealCMD\Commands;
 
 use FeedHealCMD\Main;
+use FeedHealCMD\Task\Particle;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
-use pocketmine\level\sound\{
-    AnvilBreakSound,
-    AnvilFallSound,
-    AnvilUseSound,
-    BlazeShootSound,
-    ClickSOund,
-    DoorBumpSound,
-    DoorCrashSound,
-    DoorSound,
-    EndermanTeleportSound,
-    FizSound,
-    GenericSound,
-    GhastShootSound,
-    GhastSound,
-    LaunchSound,
-    PopSound
-};
 
 class HealCommand extends Command
 {
-    private $plugin;
     private $config;
+    private $particle;
 
     public function __construct()
     {
-        $this->plugin = Main::getInstance();
         parent::__construct("heal");
         $this->setDescription("Heal yourself!");
         $this->setPermission("command.use.heal");
         $this->config = Main::$config;
+        $this->particle = Main::$config["particle"]["heal"];
     }
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if ($sender instanceof Player) {
             if ($sender->hasPermission("command.use.heal")) {
-                if (empty($args[0])) {
-                    $sender->setHealth($sender->getMaxHealth());
+                $sound = "pocketmine\level\sound\\" . $this->config["healsound"];
+                $target = ($args[0] ?? null) ? Main::getInstance()->getServer()->getPlayer($args[0]) : $sender;
+                if ($target) {
+                    $target->setHealth($target->getMaxHealth());
+                    $target->getLevel()->addSound(new $sound($target));
+                    new Particle($target, $this->particle["range"], $this->particle["type"]);
                     $sender->sendMessage($this->config["healsuccess"]);
-                    $sender->getLevel()->addSound(new $this->config["healsound"]($sender));
-                    return false;
-                }
-                if (Main::getInstance()->getServer()->getPlayer($args[0])) {
-                    $player = Main::getInstance()->getServer()->getPlayer($args[0]);
-                    $sender->setHealth($sender->getMaxHealth());
-                    $sender->sendMessage($this->config["healsuccess"]);
-                    $sender->getLevel()->addSound(new $this->config["healsound"]($sender));
                 }
             } else {
                 $sender->sendMessage($this->config["nopermission"]);

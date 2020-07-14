@@ -13,7 +13,7 @@ healsound: AnvilUseSound
 # AnvilFallSound
 # AnvilUseSound
 # BlazeShootSound
-# ClickSOund
+# ClickSound
 # DoorBumpSound
 # DoorCrashSound
 # DoorSound
@@ -24,3 +24,14 @@ healsound: AnvilUseSound
 # GhastSound
 # LaunchSound
 # PopSound
+# Particle effect. Default: circle.
+particle:
+  feed:
+    type: "circle"
+    range: 1
+  heal:
+    type: "circle"
+    range: 1
+# List of particle:
+# none
+# circle
