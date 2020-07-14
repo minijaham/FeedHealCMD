@@ -4,7 +4,6 @@ namespace FeedHealCMD;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
-
 use FeedHealCMD\Commands\FeedCommand;
 use FeedHealCMD\Commands\HealCommand;
 
@@ -35,6 +34,7 @@ class Main extends PluginBase
         self::$config = (new Config($this->getDataFolder() . "config.yml", Config::YAML))->getAll();
 
         $this->onCommands();
+
     }
 
     private function onCommands()
