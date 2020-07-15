@@ -7,9 +7,9 @@ PocketMine-MP(PMMP) plugin that allows you to add /feed and /heal on your server
 |[![HitCount](http://hits.dwyl.com/minijaham/FeedHealCMD.svg)](http://hits.dwyl.com/minijaham/FeedHealCMD)|[GitHub license](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE)
 
 # Commands
-/feed - Allows you to feed yourself! Replenish hunger!
+/feed - Allows you to feed yourself! Hunger bar will be full upon executing.
 
-/heal - Allows you to heal yourself! Heal your wounds!
+/heal - Allows you to heal yourself! Health bar will be full upon executing.
 
 # Permissions
 Feed - command.use.feed
