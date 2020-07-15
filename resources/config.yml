@@ -5,6 +5,21 @@ feedsuccess: "Successfully Fed!"
 healsuccess: "Successfully Healed!"
 # Message that sends to player who executed the commands without permission
 nopermission: "You do not have permission to use this command"
+# Player join auto feed
+auto_feed: true
+# Player join auto heal
+auto_heal: true
+# Touch mode: If you find it troublesome to enter commands, such as a player with a bad name, you can enable this mode,
+# click on the player with your set items(id:meta_id)!
+touch_mode:
+  enable: true
+  feed:
+    item_id: "348:0"
+  heal:
+    item_id: "353:0"
+  # feed & heal
+  fh:
+    item_id: "357:0"
 # Sound effect when player executes /feed. Default: AnvilUseSound.
 feedsound: AnvilUseSound
 # Sound effect when player executes /heal. Default: AnvilUseSound.
