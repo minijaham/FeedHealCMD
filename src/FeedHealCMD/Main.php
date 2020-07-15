@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use FeedHealCMD\Commands\FeedCommand;
 use FeedHealCMD\Commands\HealCommand;
+use FeedHealCMD\Event\Events;
 
 class Main extends PluginBase
 {
@@ -25,14 +26,16 @@ class Main extends PluginBase
     public function onEnable()
     {
 
-        $this->getServer()->getLogger()->info(self::prefix . " Enabled");
-
-        self::$instance = $this;
-
         $this->saveResource("config.yml");
 
         self::$config = (new Config($this->getDataFolder() . "config.yml", Config::YAML))->getAll();
 
+        $this->getServer()->getLogger()->info(self::prefix . " Enabled");
+
+        self::$instance = $this;
+
+        $this->getServer()->getPluginManager()->registerEvents(new Events, $this);
+        
         $this->onCommands();
 
     }
