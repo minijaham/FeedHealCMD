@@ -7,6 +7,7 @@ use pocketmine\utils\Config;
 use FeedHealCMD\Commands\FeedCommand;
 use FeedHealCMD\Commands\HealCommand;
 use FeedHealCMD\Event\Events;
+use pocketmine\utils\TextFormat as TF;
 
 class Main extends PluginBase
 {
@@ -16,6 +17,8 @@ class Main extends PluginBase
     public static $instance;
 
     public static $config;
+
+    public static $Form;
 
     public static function getInstance()
     {
@@ -30,14 +33,19 @@ class Main extends PluginBase
 
         self::$config = (new Config($this->getDataFolder() . "config.yml", Config::YAML))->getAll();
 
-        $this->getServer()->getLogger()->info(self::prefix . " Enabled");
-
         self::$instance = $this;
 
         $this->getServer()->getPluginManager()->registerEvents(new Events, $this);
-        
+
         $this->onCommands();
 
+        if ($GForm = $this->getServer()->getPluginManager()->getPlugin("GForm")) {
+            self::$Form = $GForm;
+            $this->getServer()->getLogger()->info(self::prefix . " Enabled");
+        } else {
+            $this->getLogger()->info(TF::RED . "GForm API required! Visit:https://github.com/zRains/GForm");
+            $this->getServer()->getPluginManager()->disablePlugin($this);
+        }
     }
 
     private function onCommands()
