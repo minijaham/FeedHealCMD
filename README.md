@@ -2,10 +2,10 @@
 <img src="https://github.com/minijaham/FeedHealCMD/blob/master/img/Steak.png?raw=true">
 </p>
 <p align="center">
-<a herf="http://hits.dwyl.com/minijaham/FeedHealCMD"><img src="http://hits.dwyl.com/minijaham/FeedHealCMD.svg" style="margin:0 5px"></a>
-<a herf="https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE"><img src="https://img.shields.io/github/license/minijaham/FeedHealCMD" style="margin:0 5px"></a>
-<a herf="https://poggit.pmmp.io/ci/minijaham/FeedHealCMD"><img src="https://img.shields.io/badge/-Download-blue" style="margin:0 5px"></a>
-<a herf="https://bit.ly/APEdiscord"><img src="https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord" style="margin:0 5px"></a>
+<a href="http://hits.dwyl.com/minijaham/FeedHealCMD"><img src="http://hits.dwyl.com/minijaham/FeedHealCMD.svg" style="margin:0 5px"></a>
+<a href="https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE"><img src="https://img.shields.io/github/license/minijaham/FeedHealCMD" style="margin:0 5px"></a>
+<a href="https://poggit.pmmp.io/ci/minijaham/FeedHealCMD"><img src="https://img.shields.io/badge/-Download-blue" style="margin:0 5px"></a>
+<a href="https://bit.ly/APEdiscord"><img src="https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord" style="margin:0 5px"></a>
 </p>
 
 ## FeedHealCMD
