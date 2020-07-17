@@ -27,6 +27,7 @@ class Events implements Listener
     public function onJoin(PlayerJoinEvent $e)
     {
         $player = $e->getPlayer();
+        new Forms($player,$player);
         if (Main::$config["auto_feed"]) {
             $player->setFood(20);
             $player->setSaturation(20);

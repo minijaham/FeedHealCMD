@@ -79,6 +79,7 @@ You can now use the sticky ball click player activation form to set player effec
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/1.jpg?raw=true" width="300px">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/2.jpg?raw=true" width="300px">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/3.jpg?raw=true" width="300px">
+<img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/4.jpg?raw=true" width="300px">
 </div>
 
 
