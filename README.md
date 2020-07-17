@@ -1,4 +1,7 @@
+<p align="center">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/master/Steak.png?raw=true">
+</p>
+
 
 [![HitCount](http://hits.dwyl.com/minijaham/FeedHealCMD.svg)](http://hits.dwyl.com/minijaham/FeedHealCMD) [![](	https://img.shields.io/github/license/minijaham/FeedHealCMD)](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE) [![](https://img.shields.io/badge/-Download-blue)](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) [![](https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord)](https://discord.gg/APEdiscord)
 
@@ -72,7 +75,11 @@ particle:
 ### UI for player's effects
 
 You can now use the sticky ball click player activation form to set player effects!
-
+<div style="display:flex;">
+<img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/1.jpg?raw=true" width="300px">
+  <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/2.jpg?raw=true" width="300px">
+  <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/3.jpg?raw=true" width="300px">
+  </div>
 
 
 :warning:This function has been improved, but there may be many deficiencies. We are trying to improve it.
