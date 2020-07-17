@@ -3,7 +3,7 @@
 </p>
 
 
-[![HitCount](http://hits.dwyl.com/minijaham/FeedHealCMD.svg)](http://hits.dwyl.com/minijaham/FeedHealCMD) [![](	https://img.shields.io/github/license/minijaham/FeedHealCMD)](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE) [![](https://img.shields.io/badge/-Download-blue)](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) [![](https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord)](https://discord.gg/APEdiscord)
+[![HitCount](http://hits.dwyl.com/minijaham/FeedHealCMD.svg)](http://hits.dwyl.com/minijaham/FeedHealCMD) [![](	https://img.shields.io/github/license/minijaham/FeedHealCMD)](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE) [![](https://img.shields.io/badge/-Download-blue)](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) [![](https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord)](https://bit.ly/APEdiscord)
 
 ## FeedHealCMD 
 
