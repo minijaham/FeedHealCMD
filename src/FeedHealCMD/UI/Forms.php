@@ -74,7 +74,7 @@ class Forms
     {
         $form = $this->Form->CreateCustomForm(array_values($this->effect)[0]["name"], function (Player $player, $data) {
             if (is_null($data)) {
-                $this->showInfo($this->target, $player);
+                $this->showInfo($player);
             } else {
                 $this->target->addEffect(new EffectInstance(
                     Effect::getEffect(array_keys($this->effect)[0]),
