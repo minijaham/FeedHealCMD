@@ -20,13 +20,13 @@ Restore player's health value and starvation value, and set player's effect thro
 | heal    | Restore player's health value | /heal [player] \| /heal | /heal minijaham \| /heal | Op          |
 
 ### Install
-:one:[Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!). 
+:one:  [Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!). 
 
-:two:Upload the .phar file that you downloaded to /plugins folder
+:two:  Upload the .phar file that you downloaded to /plugins folder
 
-:three:Restart your server
+:three:  Restart your server
 
-:four:Enjoy!
+:four:  Enjoy!
 
 Note: If there are any issues with the plugin, feel free to edit them however you want. Just please don't forget to read [LICENSE](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE).
 
@@ -77,9 +77,9 @@ particle:
 You can now use the sticky ball click player activation form to set player effects!
 <div style="display:flex;">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/1.jpg?raw=true" width="300px">
-  <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/2.jpg?raw=true" width="300px">
-  <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/3.jpg?raw=true" width="300px">
-  </div>
+<img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/2.jpg?raw=true" width="300px">
+<img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/3.jpg?raw=true" width="300px">
+</div>
 
 
 :warning:This function has been improved, but there may be many deficiencies. We are trying to improve it.
