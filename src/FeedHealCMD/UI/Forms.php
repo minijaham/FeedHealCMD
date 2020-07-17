@@ -104,8 +104,9 @@ class Forms
     public function removeEffect(Player $player): void
     {
         $form = $this->Form->CreateModalForm("Remove Effect", function (Player $player, $data) {
-            if ($data === 0) {
+            if ($data) {
                 $this->target->removeEffect($this->remove_effect->getId());
+                $player->sendTip("success");
             } else {
                 $this->showInfo($player);
             }
