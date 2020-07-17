@@ -1,14 +1,17 @@
-<p align="center">
+<p align="center" style="display:flex;flex-direction: column;">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/master/img/Steak.png?raw=true">
 </p>
+<div style="display:flex;justify-content: center;">
+<a herf="http://hits.dwyl.com/minijaham/FeedHealCMD"><img src="http://hits.dwyl.com/minijaham/FeedHealCMD.svg" style="margin:0 5px"></a>
+<a herf="https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE"><img src="https://img.shields.io/github/license/minijaham/FeedHealCMD" style="margin:0 5px"></a>
+<a herf="https://poggit.pmmp.io/ci/minijaham/FeedHealCMD"><img src="https://img.shields.io/badge/-Download-blue" style="margin:0 5px"></a>
+<a herf="https://bit.ly/APEdiscord"><img src="https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord" style="margin:0 5px"></a>
+</div>
 
-
-[![HitCount](http://hits.dwyl.com/minijaham/FeedHealCMD.svg)](http://hits.dwyl.com/minijaham/FeedHealCMD) [![](	https://img.shields.io/github/license/minijaham/FeedHealCMD)](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE) [![](https://img.shields.io/badge/-Download-blue)](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) [![](https://img.shields.io/badge/Discord-AndromedaPE-brightgreen?logo=discord)](https://bit.ly/APEdiscord)
-
-## FeedHealCMD 
-
+## FeedHealCMD
 
 ### About
+
 PocketMine-MP(PMMP) plugin that allows you to add /feed and /heal on your server!
 Restore player's health value and starvation value, and set player's effect through UI!
 
@@ -20,13 +23,14 @@ Restore player's health value and starvation value, and set player's effect thro
 | heal    | Restore player's health value | /heal [player] \| /heal | /heal minijaham \| /heal | Op          |
 
 ### Install
-:one:  [Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!). 
 
-:two:  Upload the .phar file that you downloaded to /plugins folder
+:one: [Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!).
 
-:three:  Restart your server
+:two: Upload the .phar file that you downloaded to /plugins folder
 
-:four:  Enjoy!
+:three: Restart your server
+
+:four: Enjoy!
 
 Note: If there are any issues with the plugin, feel free to edit them however you want. Just please don't forget to read [LICENSE](https://github.com/minijaham/FeedHealCMD/blob/master/LICENSE).
 
@@ -75,6 +79,7 @@ particle:
 ### UI for player's effects
 
 You can now use the sticky ball click player activation form to set player effects!
+
 <div style="display:flex;">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/1.jpg?raw=true" width="300px">
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/2.jpg?raw=true" width="300px">
@@ -82,18 +87,18 @@ You can now use the sticky ball click player activation form to set player effec
 <img src="https://github.com/minijaham/FeedHealCMD/blob/extend/img/4.jpg?raw=true" width="300px">
 </div>
 
-
 :warning:This function has been improved, but there may be many deficiencies. We are trying to improve it.
 
 ### Help us :wave:
 
 If you have any other suggestions, please feel free to create an issue! Thanks!
 
-### Extra 
+### Extra
 
 Join my server! AndromedaPE.tk:19132
 
 ### Disclaimer
+
 ```
 This software is licensed under "GNU General Public License v3.0".
 This license allows you to use it and/or modify it but you are not at
