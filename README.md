@@ -24,9 +24,9 @@ Restore player's health value and starvation value, and set player's effect thro
 
 ### Install
 
-:one: [Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!).
+:one: [Download](https://poggit.pmmp.io/ci/minijaham/FeedHealCMD) the .phar file(USE THE FeedHealCMD Dev build!!!! The FeedAndHeal is old version of this repo!).
 
-:two: [Download](https://github.com/zRains/GForm) 
+:two: [Download](https://github.com/zRains/GForm) GForm Lib in order to not get an internal server error xD
 
 :three: Upload the files that you downloaded to /plugins folder
 
