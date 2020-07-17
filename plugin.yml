@@ -3,3 +3,4 @@ version: 1.0
 authors: [minijaham, zRains]
 main: FeedHealCMD\Main
 api: 3.13.0
+depend: GForm
