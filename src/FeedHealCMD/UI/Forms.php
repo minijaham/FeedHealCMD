@@ -17,6 +17,7 @@ class Forms
     private $Form;
     private $target;
     private $effect;
+    private $remove_effect;
     public function __construct(Player $target, Player $player)
     {
         $this->Form = Main::$Form;
@@ -32,7 +33,13 @@ class Forms
     {
         $form = $this->Form->CreateSimpleForm($this->target->getName(), function (Player $player, $data) {
             if (!is_null($data)) {
-                $this->showAllEffects($player);
+                if ($data === 0) {
+                    $this->showAllEffects($player);
+                } else {
+                    $this->remove_effect = array_values($this->target->getEffects())[$data - 1];
+                    // Main::getInstance()->getLogger()->info(var_dump($this->target->getEffects()));
+                    $this->removeEffect($player);
+                }
             }
         });
         $form->setContent("Player Owned effects:");
@@ -87,6 +94,24 @@ class Forms
         $form->setInput("Duration(s):", "1000");
         $form->setInput("amplifier:", "1");
         $form->setToggle("Visible:");
+        $form->sendForm($player);
+    }
+    /**
+     * Form removing player effects
+     * @param Player $player Click the player's op
+     * @return void
+     **/
+    public function removeEffect(Player $player): void
+    {
+        $form = $this->Form->CreateModalForm("Remove Effect", function (Player $player, $data) {
+            if ($data === 0) {
+                $this->target->removeEffect($this->remove_effect->getId());
+            } else {
+                $this->showInfo($player);
+            }
+        });
+        $form->setContent("Are sure remove " . Effects::getMap()[$this->remove_effect->getId()]["name"] . " from " . $this->target->getName() . "?");
+        $form->setButton(["Confirm", "Cancel"]);
         $form->sendForm($player);
     }
 }
