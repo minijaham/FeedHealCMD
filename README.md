@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/minijaham/FeedHealCMD/blob/master/Steak.png?raw=true">
+<img src="https://github.com/minijaham/FeedHealCMD/blob/master/img/Steak.png?raw=true">
 </p>
 
 
