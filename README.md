@@ -19,8 +19,8 @@ Restore player's health value and starvation value, and set player's effect thro
 
 | Command | Description                   | Usage                   | Example                  | Permissions |
 | ------- | ----------------------------- | ----------------------- | ------------------------ | ----------- |
-| feed    | Restore player's hunger value | /feed [player] \| /feed | /feed minijaham \| /feed | Op          |
-| heal    | Restore player's health value | /heal [player] \| /heal | /heal minijaham \| /heal | Op          |
+| /feed    | Restore player's hunger value | /feed [player] \| /feed | /feed minijaham \| /feed | Op          |
+| /heal    | Restore player's health value | /heal [player] \| /heal | /heal minijaham \| /heal | Op          |
 
 ### Install
 
